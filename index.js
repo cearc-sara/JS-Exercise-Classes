@@ -141,11 +141,11 @@ class Instructor extends Lambdasian{
     this.favLanguage = para.favLanguage;
     this.catchPhrase = para.catchPhrase;
   }
-  demo('subject'){
-    return `Today we are learning about ${'subject'}`;
+  demo(subject){
+    return `Today we are learning about ${subject}`;
   }
-  grade(student, 'subject'){
-    return `${student.name} receives a perfect score on ${'subject'}`;
+  grade(student, subject){
+    return `${student.name} receives a perfect score on ${subject}`;
   }
 
 }
@@ -173,7 +173,7 @@ class Student extends Lambdasian{
     this.favSubjects = para.favSubjects;
   }
   listSubjects(){
-    return `Loving ${this.favSubjects}`;
+    return `Loving ${this.favSubjects}!`;
   }
   PRAssignment(subject){
     return `${Student.name} has submitted a PR for ${subject}`;
