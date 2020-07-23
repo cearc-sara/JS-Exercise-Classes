@@ -41,9 +41,9 @@ class Airplane {
 */
 
 class Person {
-  constructor(para){
-    this.name = para.name;
-    this.age = para.age;
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
     this.stomach = [];
   }
   eat(food){
@@ -74,9 +74,9 @@ class Person {
 */
 
 class Car {
-  constructor(para){
-    this.model = para.model;
-    this.milesPerGallon = para.milesPerGallon;
+  constructor(model, milesPerGallon){
+    this.model = model;
+    this.milesPerGallon = milesPerGallon;
     this.tank = 0;
     this.odometer = 0;
   }
@@ -109,6 +109,11 @@ class Car {
         + {name} and {location} of course come from the instance's own properties.
 */
 class Lambdasian {
+  constructor(para){
+    this.name = para.name;
+    this.age = para.age;
+    this.location = para.location;
+  }
 
 }
 
